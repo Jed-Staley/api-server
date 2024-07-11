@@ -13,7 +13,8 @@ const handleNotFound = require('./handlers/404.js');
 const handleError = require('./handlers/500.js');
 
 // router imports
-const foodRouter = require('./routes/food.js');
+const authorRouter = require('./routes/authors');
+const bookRouter = require('./routes/books');
 
 const app = express();
 
@@ -35,7 +36,9 @@ app.use(timestamp);
 app.use(logger);
 
 // routes
-app.use(foodRouter);
+app.get('/', proofOfLife);
+app.use(authorRouter);
+app.use(bookRouter);
 
 // handlers implementation
 app.use('*', handleNotFound);
