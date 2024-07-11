@@ -1,0 +1,30 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "API Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jed-Staley/api-server.git"
+  },
+  "author": "Jedidiah Staley",
+  "license": "MIT",
+  "homepage": "https://github.com/Jed-Staley/api-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
